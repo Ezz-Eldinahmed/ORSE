@@ -1,7 +1,7 @@
 
 <p align="center"><a href="http://orse.herokuapp.com/" target="_blank"><img src="http://orse.herokuapp.com/images/logo_login.png" width="400"></a></p>
 
-Learning platform ORSE
+## Learning platform ORSE
 
 Educational cross platform i have made the api also web version from it
 
