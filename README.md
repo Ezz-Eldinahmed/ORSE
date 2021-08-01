@@ -1,5 +1,5 @@
 
-<p align="center"><a href="http://orse.herokuapp.com/" target="_blank"><img src="http://orse.herokuapp.com/images/logo_sm.png" width="400"></a></p>
+<p align="center"><a href="http://orse.herokuapp.com/" target="_blank"><img src="http://orse.herokuapp.com/images/logo_login.png" width="400"></a></p>
 
 Learning platform ORSE
 
