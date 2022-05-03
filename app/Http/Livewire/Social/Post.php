@@ -38,7 +38,7 @@ class Post extends Timeline
     public function comment()
     {
         $data = $this->validate([
-            'comment' => 'required|max:200'
+            'comment' => 'required|max:50'
         ]);
 
         $comment = $this->post->comment()->create([

@@ -18,7 +18,11 @@ class Instructor
     public function handle(Request $request, Closure $next)
     {
         if (Auth::check()) {
-
+            if (auth()->user()->role != null) {
+                if (auth()->user()->role->role == 1) {
+                    return $next($request);
+                }
+            }
             $course = $request->route('course');
             $category = $request->route('category');
             $lesson = $request->route('lesson');

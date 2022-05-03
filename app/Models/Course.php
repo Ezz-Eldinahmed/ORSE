@@ -63,15 +63,6 @@ class Course extends Model
         return $this->morphMany(Rate::class, 'rateable');
     }
 
-    public function valueRate()
-    {
-        $rate = 0;
-        foreach ($this->rates as $key => $value) {
-            $rate += $value->rate;
-        }
-        return $rate;
-    }
-
     public function rated(Course $course)
     {
         return Rate::where('user_id', auth()->user()->id)

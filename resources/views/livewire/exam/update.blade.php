@@ -63,7 +63,8 @@
         <!-- Button -->
         <button @click="showModal = !showModal"
             class="px-4 py-2 text-lg font-bold text-white bg-green-400 rounded-lg shadow-md">Add
-            Question</button>
+            Question
+        </button>
 
         <!-- Modal Background -->
         <div x-show="showModal"
@@ -143,7 +144,7 @@
     @forelse ($exam->examQuestions as $examQuestion)
     @livewire('exam-question-edit',['examQuestion' => $examQuestion],key($examQuestion->id))
     @empty
-    <p class="p-2 m-3 font-bold text-white bg-purple-400 shadow-lg">No Questions Added To This Exam Yet</p>
+    <p class="p-2 m-3 font-bold text-white bg-purple-400 shadow-lg">No Questions Added To This Exam</p>
     @endforelse
 
 </div>

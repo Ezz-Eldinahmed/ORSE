@@ -131,9 +131,6 @@
                     </div>
 
                     <div class="mt-2">
-                        <button @click="showModal = !showModal"
-                            class="px-4 py-2 ml-3 text-sm font-bold text-gray-500 transition-colors duration-150 ease-linear bg-white border border-gray-200 rounded-xl focus:outline-none focus:ring-0 hover:bg-gray-50 focus:bg-indigo-50 focus:text-indigo">Cancel</button>
-
                         <button type="submit"
                             class="px-4 py-2 font-semibold tracking-wide text-gray-100 transition duration-300 ease-in bg-yellow-300 rounded shadow-lg cursor-pointer focus:outline-none focus:shadow-outline hover:bg-blue-600">
                             Edit
@@ -143,6 +140,9 @@
                         </div>
                     </div>
                 </form>
+                <button @click="showModal = !showModal"
+                    class="px-4 py-2 ml-3 text-sm font-bold text-gray-500 transition-colors duration-150 ease-linear bg-white border border-gray-200 rounded-xl focus:outline-none focus:ring-0 hover:bg-gray-50 focus:bg-indigo-50 focus:text-indigo">Cancel</button>
+
                 @include('components.editmodeldown')
                 @endcan
             </div>

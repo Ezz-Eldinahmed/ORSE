@@ -7,7 +7,6 @@ use App\Models\Question;
 use App\Models\Reply as ModelsReply;
 use Illuminate\Support\Facades\Notification;
 use App\Notifications\ReplyAdded;
-use App\Notifications\ReplySetToBestReply;
 use App\Repositories\ReplyRepository;
 use Livewire\WithFileUploads;
 
@@ -91,7 +90,9 @@ class Reply extends Component
             'answer_edit' => 'required|max:1000',
         ]);
 
-        $reply->update($data);
+        $reply->update([
+            'answer' => $data['answer_edit']
+        ]);
         session()->flash('updatereply', 'Reply Updated Successfully');
     }
 }

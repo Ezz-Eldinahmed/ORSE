@@ -1,15 +1,3 @@
-
-<p align="center"><a href="http://orse.herokuapp.com/" target="_blank"><img src="http://orse.herokuapp.com/images/logo_login.png" width="400"></a></p>
-
-## Learning platform ORSE
-
-Educational cross-platform I have made the API also web version from it
-
-https://orse.herokuapp.com/
-
-It has many modules that have a student to learn instructor to show teachers and interviewer to make an interview to accent the educational ability of the instructor, have social media to connect, questions to ask and reply
-
-
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">

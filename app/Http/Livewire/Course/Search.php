@@ -12,7 +12,7 @@ class Search extends Component
 
     public $search = '';
     public $course_filter;
-    private $courses;
+    private $courses = [];
 
     public function render()
     {

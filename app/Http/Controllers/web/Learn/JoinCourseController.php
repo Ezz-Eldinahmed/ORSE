@@ -5,6 +5,7 @@ namespace App\Http\Controllers\web\Learn;
 use App\Http\Controllers\Controller;
 use App\Models\Course;
 use App\Repositories\JoinCourseRepository;
+use Illuminate\Http\RedirectResponse;
 
 class JoinCourseController extends Controller
 {
@@ -22,7 +23,7 @@ class JoinCourseController extends Controller
             $this->store($course);
     }
 
-    public function store(Course $course): \Illuminate\Http\RedirectResponse
+    public function store(Course $course): RedirectResponse
     {
         return ($this->joinCourseRepository->store($course) == true) ?
             redirect()->route('course.show', $course)

@@ -6,6 +6,7 @@ use App\Models\Certification;
 use App\Models\Exam;
 use App\Repositories\ExamRepository;
 use Illuminate\Http\Request;
+use Illuminate\Http\RedirectResponse;
 
 class CertificationWebController
 {
@@ -16,7 +17,7 @@ class CertificationWebController
         $this->examRepository = $examRepository;
     }
 
-    public function store(Request $request, Exam $exam): \Illuminate\Http\RedirectResponse
+    public function store(Request $request, Exam $exam): RedirectResponse
     {
         $data = $this->examRepository->examSubmit($request, $exam);
 
